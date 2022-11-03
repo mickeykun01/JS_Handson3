@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript hadson 3 logics</h1>
+    <h3>Find the number of digits</h3>
+    <pre>const Find_Digits = (N) => 
+        {
+             var count =0;
+             if(N>=1){
+               count++
+             }
+             
+              while (N / 10 >= 1) {
+            N /= 10;
+            ++count;
+            }
+            
+            return count;
+        };
+    </pre>
+
+    <h3>Find the Fives in a given number.</h3>
+    <pre>
+        const Find_Five = (N) => 
+{
+	 let count = 0;
+	 var a;
+	 
+	 while(N !== 0){
+	   a = N%10;
+	   N = parseInt(N/10);
+	   if (a==5){
+	     count++;
+	   }
+	 }
+	 return count;
+};
+ </pre>
+
+ <h3>You are given an integer 
+    N
+    , and your task is to find the sum of all the even integers starting from 
+    1
+     upto 
+    N
+     (
+    N
+     inclusive).</h3>
+     <pre>const findSum = (n) => {
+        let sum=0;
+        
+        for(var i=1; i<=n; i++){
+          if(i%2 === 0){
+            sum = sum + i;
+          }
+        }
+        return sum;
+      };
+    </pre>
+
+    <h3>Find the sum of the digits of a given number.</h3>
+    <pre>const Number_Sum = (N) => 
+        {
+            var sum =0;
+            while(N !== 0){
+              sum = sum + N%10;
+              N = parseInt(N/10);
+            }
+            return sum;
+        };
+    </pre>
+
+    <h3>Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.</h3>
+    <pre>const Print_Odd = (N) => 
+        {
+             for(var i=2; i<=N; i++){
+               if(i==2 || i % 2 !== 0){
+                 console.log(i);
+               }
+             }
+        };
+    </pre>
+
+    <h3>Print the Pattern.</h3>
+    <pre>
+        const Print_pattern = (N) => 
+{
+  let star = "";
+  for (let i=1; i <= N; i++){
+    for(j=0; j<i; j++){
+      star=star+"*";
+    }
+    star+="\n";
+  }
+  console.log(star)
+};
+    </pre>
+
+    <h3>Check whether a Number is a prime or not.</h3>
+    <pre>const Prime_Check = (N) => 
+        {
+             let count = 0;
+             for(let i=0; i<=N; i++){
+               if(N%i === 0){
+                 count++;
+               }
+             }
+               
+               if(count == 2){
+                 return 'YES';
+               }
+               else {
+                 return 'NO';
+               }
+             
+            
+        };
+    </pre>
+
+    <h3>You are given an integer 
+        N
+        , and your task is to print all the integers starting from 
+        1
+         till 
+        N
+         (
+        N
+         inclusive).
+        </h3>
+        <pre>const printNumbers = (n) => {
+            for(let i=1; i<=n; i++){
+              console.log(i);
+            }
+        };
+    </pre>
+
+    <h3>Print the Table</h3>
+    <pre>const Print_Table = (N) => 
+        {
+            for(let i=1; i<=10; i++){
+             
+             var s= N + " * " + i + " = " + (N*i);
+             console.log(s)
+            }
+        };
+    </pre>
+</body>
+</html>
